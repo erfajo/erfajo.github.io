@@ -1,0 +1,836 @@
+<html>
+
+<head>
+    <title>Orchid Dictionary</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="10 days">
+    <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Parameter</h1>
+        <hr align="left">
+        <h3>Hierarchy: Orchid.FamilyDocument.Parameter</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.Parameters.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Parameters
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Obtain all of the Parameters from the family document, sorted by Name.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt;</div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    Parameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.AddParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddParameter
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add (create) parameter by name
+                    </div>
+                </td>
+            </tr>
+
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to create
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    type
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    group
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Group
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    tooltip
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Tooltip for the parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    reporting
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is reporting parameter. Is only available to Length and Angle parameters!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.AddParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddParameter
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add (create) parameter by name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to create
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Element </div>
+                    category
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Category for Family Type as Parameter Type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    group
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Group
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    tooltip
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Tooltip for the parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    reporting
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is reporting parameter. Is only available to Length and Angle parameters!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.AddSharedParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddSharedParameter
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add (create) shared parameter by name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to add
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    groupName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Group of the parameter for the shared parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    type
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    group
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Group
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    tooltip
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Tooltip for the parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    reporting
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is reporting parameter. Is only available to Length and Angle parameters!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.GetValue.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetValue
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get family parameter value by parameter name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to get
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    valueByType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Value by familyType
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    valueByParameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Value by parameterName
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.SetValue.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetValue
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set family parameter value by parameter name. Please notice a default type must exist!
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    value
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The value to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.Rename.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Rename
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Rename family parameter by parameter name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    sourceName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the source parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    targetName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the target parameter
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.Delete.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Delete
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Delete family parameter by parameter name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to delete
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.IsReporting.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        IsReporting
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Verify if parameter is a reporting parameter
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to verify
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    bool
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of booleans
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Parameter.Associate.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Associate
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Associate document parameter with nested family parameter
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Nested element (family type) in the familyDocument
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    documentParameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the familyDocument parameter to be associated
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    familyParameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the nested element parameter to be associated
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+<html>
+
+<head>
+    <title>Orchid Dictionary</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="10 days">
+    <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Parameter</h1>
+        <hr align="left">
+        <h3>Hierarchy: Orchid.Elements.Parameter</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.Parameter.AddProjectParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddProjectParameter
+                    </div>
+                    Orchid.Elements.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add (create) project parameter by name. If the parameter exists in the project is the category
+                    binding being updated.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;string&gt;
+                    </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to add
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> string </div>
+                    type
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Type
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> string </div>
+                    group
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Group
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Element&gt;
+                    </div>
+                    category
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Category(ies) the parameter applies to, If no category is supplied, all possible categories are
+                    selected
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.Parameter.AddSharedParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddSharedParameter
+                    </div>
+                    Orchid.Elements.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add (create) shared parameter by name in the project. If the parameter exists in the project is the
+                    category binding being updated.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;string&gt;
+                    </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to add
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> string </div>
+                    groupName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Group of the parameter for shared parameters
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> string </div>
+                    type
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Type
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> string </div>
+                    group
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Parameter Group
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Element&gt;
+                    </div>
+                    category
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Category(ies) the parameter applies to, If no category is supplied, all possible categories are
+                    selected
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.Parameter.ChangeCategory.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ChangeCategory
+                    </div>
+                    Orchid.Elements.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Change category binding for parameter by name in the project
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;string&gt;
+                    </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to change
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> bool </div>
+                    instance
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Is instance parameter, otherwise it's a type parameter
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Element&gt;
+                    </div>
+                    category
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Category(ies) the parameter applies to, If no category is supplied, all possible categories are
+                    selected
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.Parameter.DeleteParameter.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        DeleteParameter
+                    </div>
+                    Orchid.Elements.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Delete parameter by name in the project
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;string&gt;
+                    </div>
+                    parameterName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the parameter to delete
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+    </div>
+</body>
+
+</html>

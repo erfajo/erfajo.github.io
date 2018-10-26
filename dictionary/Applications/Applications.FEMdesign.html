@@ -1,0 +1,320 @@
+<html>
+
+<head>
+    <title>Orchid Dictionary</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="10 days">
+    <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="main">
+        <h1>FEMdesign</h1>
+        <hr align="left">
+        <h3>Hierarchy: Orchid.Applications.FEMdesign</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetLinearRelease
+                    </div>
+                    Orchid.Applications.FEMdesign
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set linear release in FEM-design xml-file
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename to the FEM-design xml file including extension!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    release
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Release --> List order: Top, Bottom, Right and Left
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;double&gt; </div>
+                    XYaxis
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element XY-axis value (in meter) --> List order: XY StartPoint, XY EndPoint,
+                    StruXML Guid
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;double&gt; </div>
+                    Zaxis
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element Z-axis value (in meter) --> List order: Z MinPoint, Z MaxPoint, StruXML
+                    Guid
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    release
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    FEM release
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetStiffnessValue
+                    </div>
+                    Orchid.Applications.FEMdesign
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set stiffness value globally in FEM-design
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename to the FEM-design xml file including extension!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    stiffness
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Stiffness to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;int&gt; </div>
+                    value
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Value to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename to the FEM-design xml file including extension!
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetElementID
+                    </div>
+                    Orchid.Applications.FEMdesign
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get element id from FEM-design
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename to the FEM-design xml file including extension!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    FEMid
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    FEM element id
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetReinforcement
+                    </div>
+                    Orchid.Applications.FEMdesign
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get reinforcement from FEM-design
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename to the FEM-design xml file including extension!
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    Element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    wire
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Reinforcement wire
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    mesh
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Reinforcement mesh size
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    location
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Reinforcement location
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,729 @@
+<html>
+
+<head>
+    <title>Orchid Dictionary</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="10 days">
+    <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="main">
+        <h1>List</h1>
+        <hr align="left">
+        <h3>Hierarchy: Orchid.Core.List</h3>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.Clean.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Clean
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Clean nD list
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    searchFor
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Item(s) to search for
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.Replace.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Replace
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Replace item in nD list
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    searchFor
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Item(s) to search for
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    replaceWith
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Replacement value
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.Sort.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Sort
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Sort elements using the PC 'locale'. Sort elements recursively preserving elements types and
+                    elements structure.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    descending
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Return the list in descending order?
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.SortNatural.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SortNatural
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Sort elements using the PC 'locale'. Sort elements recursively preserving elements types and
+                    elements structure.Sort elements in natural sort order by splitting digits from string and add
+                    leading zeros. http://en.wikipedia.org/wiki/Natural_sort_order
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    descending
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Return the list in descending order?
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.SortGroupByKey.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SortGroupByKey
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Sort and group items into sub-lists based on their like key values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of items to group as sublists
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Key values, one per item in the input list, used for grouping the items
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    sortedKeys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Sorted unique keys, used for grouping the items by their key
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    groups
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of sublists, with items grouped by like key values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    unique keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    key value corresponding to each group
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.IndexOf.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        IndexOf
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Returns the index (the full path) of the member in nD list
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    int
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of indicies
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.GetItemAtIndex.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetItemAtIndex
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get an item from the given list that's located at the specified index (the full path) in nD list
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List to fetch an item from
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    index
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Index of the item to be fetched
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    item
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Item in the list at the given index
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.ReplaceItemAtIndex.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ReplaceItemAtIndex
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Replace an item from the given list that's located at the specified index (the full path) in nD
+                    list
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List to replace an item in
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    index
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Index of the item to be replaced
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    item
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The item to insert
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.FilterByKey.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        FilterByKey
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Filter two list items based on common key values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list1
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Items from list 1
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    key1
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Keys from list 1
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list2
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Items from list 2
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    key2
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Keys from list 2
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    listA
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    ListA
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    listB
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    ListB
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    key
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Key
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.SummationByKey.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SummationByKey
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Summarize items and group by key values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of items as int and double to group and summarize as sublists
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Key values, one per item in the input list, used for grouping the items
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    summarized groups
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of sublist, with items grouped and summarized by like key values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    unique keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    key value corresponding to each group
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.List.GroupByEqual.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GroupByEqual
+                    </div>
+                    Orchid.Core.List
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Group items into sub-lists based on being equal
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    list
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of items to group as sublists
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    groups
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of sublist, with items grouped by like key values
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    unique keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Key value corresponding to each group
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+    </div>
+</body>
+
+</html>

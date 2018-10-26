@@ -1,0 +1,14 @@
+# Ignore user folders and content
+**/.github/*
+.vscode/
+.vs/
+_misc/
+~$*
+
+# Ignore files
+
+# Ignore text, links etc.
+*.txt
+*.lnk
+
+# Include files

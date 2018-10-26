@@ -1,0 +1,203 @@
+/* 
+
+css for Orchid Directory
+copyright: Erik Falck Jørgensen
+
+*/
+
+/* Global */
+html, body {
+    margin: 0px auto;
+    padding: 0px;
+    border: 0px;
+    overflow: hidden;
+    background-color: #222;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -webkit-tap-highlight-color: #f8f8ff;
+}
+body, table, p {
+    display: inline;
+    font-family: Verdana, Helvetica, Arial, sans-serif;
+    /* Open Sans, Helvetica Neue, Helvetica, Arial, sans-serif; */
+    font-size: 10pt;
+    color: #ccc; 
+}
+h1 {
+    font-size: 16pt;
+    font-weight: normal;
+}
+h2 {
+    font-size: 14pt;
+    font-weight: normal;
+}
+h3 {
+    font-size: 12pt;
+    font-weight: normal;
+}
+a {
+    display: inline;
+    color: orangered;
+    text-decoration: none;
+}
+hr {
+    height: 1px;
+    border: 0;
+    color: #ccc; 
+    border-color: #ccc; 
+    background-color: #ccc; 
+}
+img {
+    padding-right: 10px;
+    vertical-align: middle;
+}
+table, tr, td {
+    margin: 0px;
+    padding: 0px;
+    border-collapse: collapse;
+}
+iframe {
+    margin: 0px;
+    padding: 0px;
+    border-width: 0px;
+}
+
+
+
+/* Frame id */
+#top {
+    width: 100vw;
+    height: 50;
+    margin-top: 4px;
+    border-color: #545454;
+    border-bottom-width: 1px;
+}
+#left {
+    width: 159px;
+    height: calc(100vh - 28px);
+    border-color: #545454;
+    border-right-width: 1px;
+}
+#right {
+    width: calc(100vw - 160px);
+    /* min-width: 300px; */
+    height: calc(100vh - 55px);
+    position: absolute;
+    right: 0px;
+    top: 55px;
+}
+
+
+/* Scrollbar */
+::-webkit-scrollbar {
+    width: 7px;
+}
+::-webkit-scrollbar-thumb {
+    background-color: #ccc;
+}
+::-webkit-scrollbar-track {
+    background-color: #222;
+}
+
+
+/* Header content */
+.header {
+    font-size: 16pt;
+    text-align: center;
+}
+.header a {
+    display: inline;
+    color: #ccc; 
+    text-decoration: none;
+}
+.header img {
+    vertical-align: bottom;
+}
+
+
+/* Menu content */
+.menu h2 {
+    text-indent: 10px;
+    line-height: 28pt;
+    font-size: 12pt; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menu h3 {
+    text-indent: 16px;
+    line-height: 22pt;
+    font-size: 10pt; 
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.menu a {
+    display: block;
+    color: #ccc; 
+    text-decoration: none;
+}
+.menu a:hover {
+    background-color: #545454;
+}
+
+
+/* Main content */
+.main {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    /* max-width: 380px; */
+    padding-left: 10px;
+    padding-right: 10px;
+    word-wrap: break-word;
+}
+.main table, tr, td {
+    max-width: 450px;
+    padding-right: 10px;
+    /* padding-bottom: 10pt; */
+    vertical-align: text-top; 
+}
+.main hr {
+    width: 50vw;
+    min-width: 200px;
+}
+
+
+/* Front page */
+.front {
+    overflow-x: hidden;
+    overflow-y: auto;
+    height: 100vh;
+    max-width: 380px;
+    margin-top: 30px;
+    padding-left: 15%;
+    padding-right: 15%;
+    word-wrap: break-word;
+}
+.front hr {
+    width: 100%;
+}
+
+
+/* Highlighted text */
+.highlight {
+    display: inline;
+    padding-right: 10px;
+    color: #f8f8ff;
+}
+
+/* Description text */
+.desc {
+    padding-bottom: 10px;
+}
+
+/* input, output ports text */
+.ports {
+    text-align: right;
+    font-style: italic;
+}
+
+/* type (input, output ports) text */
+.type {
+    display: inline;
+    font-style: italic;
+    color: #4192d9;
+}
