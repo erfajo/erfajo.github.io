@@ -15,238 +15,7 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.Applications.Sigma</h3>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Applications.Sigma.Document.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Document
-                    </div>
-                    Orchid.Applications.Sigma
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Open Sigma Estimate project file or create a new empty Sigma document
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    file
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Path and Filename for Sigma Estimate document (file) including extension!, default will create a
-                    new empty Sigma document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> object </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Sigma Estimate document
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Applications.Sigma.SetData.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        SetData
-                    </div>
-                    Orchid.Applications.Sigma
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Set Revit data in Sigma Estimate project
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> object </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Sigma Estimate document, default is the active Sigma project
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    branchRoot
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Branch root where data should be written (or None)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> bool </div>
-                    clearing
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Cleaning sub component(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    component
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Data from (Sigma) Component node
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    watch
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Add a watch node to verify the data processing
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Applications.Sigma.Clearing.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Clearing
-                    </div>
-                    Orchid.Applications.Sigma
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Clear a branch in Sigma Estimate for sub component
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> object </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Sigma Estimate document, default is the active Sigma project
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    branch
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Branch where sub component is going to be cleaned
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    watch
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Add a watch node to verify the data processing
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Applications.Sigma.Delete.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Delete
-                    </div>
-                    Orchid.Applications.Sigma
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Delete a branch in Sigma Estimate
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> object </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Sigma Estimate document, default is the active Sigma project
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    branch
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Branch to be deleted
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    watch
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Add a watch node to verify the data processing
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--Component-->
         <table>
             <tr>
                 <td>
@@ -359,6 +128,7 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--ComponentByQuantity-->
         <table>
             <tr>
                 <td>
@@ -467,6 +237,242 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Component
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Clearing-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Applications.Sigma.Clearing.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Clearing
+                    </div>
+                    Orchid.Applications.Sigma
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Clear a branch in Sigma Estimate for sub component
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Sigma Estimate document, default is the active Sigma project
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    branch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Branch where sub component is going to be cleaned
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    watch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Add a watch node to verify the data processing
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Delete-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Applications.Sigma.Delete.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Delete
+                    </div>
+                    Orchid.Applications.Sigma
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Delete a branch in Sigma Estimate
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Sigma Estimate document, default is the active Sigma project
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    branch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Branch to be deleted
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    watch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Add a watch node to verify the data processing
+                </td>
+            </tr>
+        </table><br><br><br><br>
+        
+        <!--Document-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Applications.Sigma.Document.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Document
+                    </div>
+                    Orchid.Applications.Sigma
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Open Sigma Estimate project file or create a new empty Sigma document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path and Filename for Sigma Estimate document (file) including extension!, default will create a
+                    new empty Sigma document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Sigma Estimate document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetData-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Applications.Sigma.SetData.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetData
+                    </div>
+                    Orchid.Applications.Sigma
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set Revit data in Sigma Estimate project
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Sigma Estimate document, default is the active Sigma project
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    branchRoot
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Branch root where data should be written (or None)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    clearing
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Cleaning sub component(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    component
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Data from (Sigma) Component node
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    watch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>

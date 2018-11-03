@@ -3,7 +3,7 @@
 <head>
     <title>Orchid Dictionary</title>
     <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
-    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="copyright" content="Erik Falck JC8rgensen">
     <meta name="distribution" content="global">
     <meta name="revisit-after" content="10 days">
     <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
@@ -15,14 +15,15 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.Core.Document</h3>
 
+        <!--ImportImage-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Document.Current.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Document.ImportImage.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        Current
+                        ImportImage
                     </div>
                     Orchid.Core.Document
                 </td>
@@ -31,100 +32,35 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Get current document
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> Document </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.Document
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.Document.ActiveView.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        ActiveView
-                    </div>
-                    Orchid.Core.Document
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the active view in document
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> Element </div>
-                    View
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    ActiveView
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.Document.Name.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Name
-                    </div>
-                    Orchid.Core.Document
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the current document name
+                    Import Image into document
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> Document </div>
-                    document
+                    <div class="type"> string </div>
+                    path
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    The name of the document
+                    Image path including file name and extension
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> string </div>
-                    string
+                    <div class="type"> object </div>
+                    ImageType
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    string
+                    ImageType
                 </td>
             </tr>
         </table><br><br><br><br>
 
+        <!--BackgroundOpen-->
         <table>
             <tr>
                 <td>
@@ -169,105 +105,7 @@
             </tr>
         </table><br><br><br><br>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.Document.Save.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Save
-                    </div>
-                    Orchid.Core.Document
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Save document
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> Document </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> Document </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.Document
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.Document.SaveAs.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        SaveAs
-                    </div>
-                    Orchid.Core.Document
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    SaveAs document
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> Document </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    name
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Name for the document incl. path
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> Document </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.Document
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--Close-->
         <table>
             <tr>
                 <td>
@@ -323,14 +161,15 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Purge-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Document.ImportImage.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Document.Purge.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        ImportImage
+                        Purge
                     </div>
                     Orchid.Core.Document
                 </td>
@@ -339,34 +178,193 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Import Image into document
+                        Purge document
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> string </div>
-                    path
+                    <div class="type"> Document </div>
+                    document
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Image path including file name and extension
+                    Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Save-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Document.Save.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Save
+                    </div>
+                    Orchid.Core.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Save document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.Document
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> object </div>
-                    ImageType
+                    <div class="type"> Document </div>
+                    Document
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    ImageType
+                    Autodesk.DB.Document
                 </td>
             </tr>
         </table><br><br><br><br>
 
+        <!--SaveAs-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Document.SaveAs.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SaveAs
+                    </div>
+                    Orchid.Core.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    SaveAs document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    name
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Name for the document incl. path
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--ActiveView-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Document.ActiveView.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ActiveView
+                    </div>
+                    Orchid.Core.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the active view in document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Element </div>
+                    View
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    ActiveView
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Current-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Document.Current.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Current
+                    </div>
+                    Orchid.Core.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get current document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Info-->
         <table>
             <tr>
                 <td>
@@ -407,6 +405,51 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Document info
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Name-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Document.Name.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Name
+                    </div>
+                    Orchid.Core.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the current document name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    string
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    string
                 </td>
             </tr>
         </table><br><br><br><br>

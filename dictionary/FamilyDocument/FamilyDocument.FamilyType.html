@@ -15,138 +15,7 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.FamilyDocument.FamilyType</h3>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Current.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Current
-                    </div>
-                    Orchid.FamilyDocument.FamilyType
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the current family type
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> FamilyType </div>
-                    FamilyType
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Autodesk.DB.FamilyType
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Name.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Name
-                    </div>
-                    Orchid.FamilyDocument.FamilyType
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the family type name
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> FamilyType </div>
-                    familyType
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The name of the family type
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    string
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    string
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.All.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        All
-                    </div>
-                    Orchid.FamilyDocument.FamilyType
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get all family types
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    familyDocument
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> FamilyType </div>
-                    familyType
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    List of family type
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--Create-->
         <table>
             <tr>
                 <td>
@@ -203,6 +72,63 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Delete-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Delete.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Delete
+                    </div>
+                    Orchid.FamilyDocument.FamilyType
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Delete family type by name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the family type to delete
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Rename-->
         <table>
             <tr>
                 <td>
@@ -270,14 +196,15 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--All (familyDocument)-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Delete.Small.png">
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.All.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        Delete
+                        All (familyDocument)
                     </div>
                     Orchid.FamilyDocument.FamilyType
                 </td>
@@ -286,7 +213,7 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Delete family type by name
+                    Get all family types in current document
                     </div>
                 </td>
             </tr>
@@ -304,12 +231,12 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> FamilyType </div>
-                    familyType
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    The name of the family type to delete
+                    Family document (rfa) as Autodesk.DB.Document
                 </td>
             </tr>
             <tr>
@@ -323,8 +250,155 @@
                     Family document (rfa) as Autodesk.DB.Document
                 </td>
             </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of family type
+                </td>
+            </tr>
         </table><br><br><br><br>
 
+        <!--All-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.All.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        All
+                    </div>
+                    Orchid.FamilyDocument.FamilyType
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get all family types in list of documents
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of family type
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Current (familyDocument)-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Current.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Current (familyDocument)
+                    </div>
+                    Orchid.FamilyDocument.FamilyType
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the current family type in list of documents
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Document </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    FamilyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Current-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Current.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Current
+                    </div>
+                    Orchid.FamilyDocument.FamilyType
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the current family type in current document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    FamilyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.DB.FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--GetNested-->
         <table>
             <tr>
                 <td>
@@ -377,6 +451,51 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Autodesk.DB.FamilySymbol
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Name-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.FamilyType.Name.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Name
+                    </div>
+                    Orchid.FamilyDocument.FamilyType
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the family type name
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> FamilyType </div>
+                    familyType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    string
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    string
                 </td>
             </tr>
         </table><br><br><br><br>

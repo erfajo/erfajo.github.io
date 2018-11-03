@@ -15,72 +15,7 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.Elements.SystemFamily</h3>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.SystemFamily.LayerFunctionDD.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Compound Layer Function
-                    </div>
-                    Orchid.Elements.SystemFamily
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Dropdown for compound layer function values
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> int </div>
-                    function
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Layer function as integer value
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.SystemFamily.LayerPlacementDD.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Compound Layer Placement
-                    </div>
-                    Orchid.Elements.SystemFamily
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Dropdown for compound layer placement values
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    placement
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Layer placement as string value
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--CreateCompoundLayer-->
         <table>
             <tr>
                 <td>
@@ -99,7 +34,6 @@
                     <div class="desc">
                     Create a layer by index at a specified compound layer in a system family type that have a compound
                     structure (walls, floors, roofs etc.).
-
                     </div>
                 </td>
             </tr>
@@ -114,9 +48,6 @@
                     The system family type
                 </td>
             </tr>
-            <tr>
-
-
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
@@ -196,6 +127,75 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Compound Layer Function-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.LayerFunctionDD.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Compound Layer Function
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Dropdown for compound layer function values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> int </div>
+                    function
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Layer function as integer value
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Compound Layer Placement-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.LayerPlacementDD.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Compound Layer Placement
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Dropdown for compound layer placement values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    placement
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Layer placement as string value
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--DeleteCompoundLayer-->
         <table>
             <tr>
                 <td>
@@ -252,98 +252,7 @@
             </tr>
         </table><br><br><br><br>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.SystemFamily.GetCompoundLayerMaterial.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        GetCompoundLayerMaterial
-                    </div>
-                    Orchid.Elements.SystemFamily
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the compound layer material in a system family type that
-                    have a compound structure (walls, floors, roofs etc.).
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;Element&gt; </div>
-                    elementType
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The system family type
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <div class="ports">Output:</div>
-                </td>
-                <td>
-                    <div class="type"> List&lt;Material&gt; </div>               
-                    Material
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Material
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.SystemFamily.GetCompoundLayerWidth.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        GetCompoundLayerWidth
-                    </div>
-                    Orchid.Elements.SystemFamily
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the compound layer width in a system family type that
-                    have a compound structure (walls, floors, roofs etc.).
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;Element&gt; </div>
-                    elementType
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The system family type
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;double&gt; </div>
-                    Width
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Width
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--SetCompoundLayerMaterial-->
         <table>
             <tr>
                 <td>
@@ -413,6 +322,7 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--SetCompoundLayerWidth-->
         <table>
             <tr>
                 <td>
@@ -476,6 +386,100 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--GetCompoundLayerMaterial-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.GetCompoundLayerMaterial.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetCompoundLayerMaterial
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the compound layer material in a system family type that
+                    have a compound structure (walls, floors, roofs etc.).
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    elementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The system family type
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Output:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Material&gt; </div>               
+                    Material
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Material
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--GetCompoundLayerWidth-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.GetCompoundLayerWidth.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetCompoundLayerWidth
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the compound layer width in a system family type that
+                    have a compound structure (walls, floors, roofs etc.).
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Element&gt; </div>
+                    elementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The system family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;double&gt; </div>
+                    Width
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Width
                 </td>
             </tr>
         </table><br><br><br><br>

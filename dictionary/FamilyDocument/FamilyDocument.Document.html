@@ -15,51 +15,7 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.FamilyDocument.Document</h3>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.Document.LoadFamily.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        LoadFamily
-                    </div>
-                    Orchid.FamilyDocument.Document
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Load family by file name, same core process as File.LoadFamily
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    familyDocument
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--AddLookupTable-->
         <table>
             <tr>
                 <td>
@@ -115,14 +71,15 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--LoadFamily-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.FamilyDocument.Document.GetCategory.Small.png">
+                    <img src="../nodeImg/Orchid.FamilyDocument.Document.LoadFamily.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        GetCategory
+                        LoadFamily
                     </div>
                     Orchid.FamilyDocument.Document
                 </td>
@@ -131,7 +88,7 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Get the family document category.
+                    Load family by file name, same core process as File.LoadFamily
                     </div>
                 </td>
             </tr>
@@ -155,21 +112,12 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    Category
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Category
+
                 </td>
             </tr>
         </table><br><br><br><br>
 
+        <!--SetCategory-->
         <table>
             <tr>
                 <td>
@@ -221,6 +169,62 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--GetCategory-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.FamilyDocument.Document.GetCategory.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetCategory
+                    </div>
+                    Orchid.FamilyDocument.Document
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get the family document category.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    Document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family document (rfa) as Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    Category
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Category
                 </td>
             </tr>
         </table><br><br><br><br>

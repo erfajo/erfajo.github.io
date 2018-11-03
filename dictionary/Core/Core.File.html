@@ -15,94 +15,7 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.Core.File</h3>
 
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.File.Info.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Info
-                    </div>
-                    Orchid.Core.File
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get file(s) info
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    file
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    File(s), incl. path
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    info
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    File(s) info
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.File.FromPath.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        FromPath
-                    </div>
-                    Orchid.Core.File
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get file from a path
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    path
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Path to the file
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    file
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    File object
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
+        <!--NewProject-->
         <table>
             <tr>
                 <td>
@@ -158,6 +71,232 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--FromPath-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.File.FromPath.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        FromPath
+                    </div>
+                    Orchid.Core.File
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get file from a path
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    path
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path to the file
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    File object
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--LoadFamily (family)-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.File.LoadFamily.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        LoadFamily (family)
+                    </div>
+                    Orchid.Core.File
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Load family by file name, same core process as FamilyDocument.LoadFamily
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    family
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path to the family file(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    Family
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--LoadFamily (document, family)-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.File.LoadFamily.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        LoadFamily (document, family)
+                    </div>
+                    Orchid.Core.File
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Open document and load family by path, existing families will be overwritten, and families is
+                    upgraded if needed. Documents will be saved and closed.
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path to the documents file(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    family
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Path to the family file(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    Family
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Family
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Rename-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.File.Rename.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Rename
+                    </div>
+                    Orchid.Core.File
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Rename file
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    directory
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The directory path as string
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    extension
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The file extension
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    source
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    NameThe name of the source file
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    targetName
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The name of the target file
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    file
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    File
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SaveFamily-->
         <table>
             <tr>
                 <td>
@@ -235,14 +374,15 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Info-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.File.LoadFamily.Small.png">
+                    <img src="../nodeImg/Orchid.Core.File.Info.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        LoadFamily
+                        Info
                     </div>
                     Orchid.Core.File
                 </td>
@@ -251,164 +391,30 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Load family by file name, same core process as FamilyDocument.LoadFamily
+                    Get file(s) info
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    family
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Path to the family file(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    Family
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.File.LoadFamily.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        LoadFamily
-                    </div>
-                    Orchid.Core.File
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Open document and load family by path, existing families will be overwritten, and families is
-                    upgraded if needed. Documents will be saved and closed.
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Path to the documents file(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    family
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Path to the family file(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    Family
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Core.File.Rename.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        Rename
-                    </div>
-                    Orchid.Core.File
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Rename file
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    directory
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The directory path as string
-                </td>
-            </tr>
-            <tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    extension
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The file extension
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    source
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    NameThe name of the source file
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;string&gt; </div>
-                    targetName
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    The name of the target file
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
                 <td>
                     <div class="type"> List&lt;string&gt; </div>
                     file
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    File
+                    File(s), incl. path
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    info
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    File(s) info
                 </td>
             </tr>
         </table><br><br><br><br>
