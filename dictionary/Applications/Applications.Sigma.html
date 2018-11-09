@@ -44,14 +44,14 @@
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List containing the structure as strings {"number","text"}.<br>
+                    List containing the structure as strings {"number","text"}.
                     At least one 'level' is needed!
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List </div>
+                    <div class="type"> List&lt;Element&gt; </div>
                     element
                 </td>
                 <td>&gt;</td>
@@ -63,130 +63,17 @@
                 <td><div class="ports">Input:</div></td>
                 <td>
                     <div class="type"> string </div>
-                    parameterName
+                    code
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Property identity field for Sigma
+                    Element identifier for Sigma
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> string </div>
-                    revitUnit
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Element quantity (Pcs, Length, Area, Volume)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    sigmaUnit
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Unit identifier for Sigma
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> double </div>
-                    sigmaRegulation
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Regulation for the Sigma Component
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> bool </div>
-                    instance
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Component as instances or summarized/nTrue select Data to be Instances, False
-                    select Data to be summarized
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    component
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Component
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <!--ComponentByQuantity-->
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Applications.Sigma.ComponentByQuantity.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        ComponentByQuantity
-                    </div>
-                    Orchid.Applications.Sigma
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Create Sigma Estimate component data by quantity
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    componentTree
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    List containing the structure as strings {"number","text"}. At least one
-                    'level' is needed!
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    element
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Element(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    parameterName
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Property identity field for Sigma
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> double </div>
+                    <div class="type"> List&lt;double&gt; </div>
                     quantity
                 </td>
                 <td>&gt;</td>
@@ -224,8 +111,8 @@
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Component as instances or summarized/nTrue select Data to be Instances, False
-                    select Data to be summarized
+                    Component as instances or summarized<br>
+                    True select Data to be Instances, False select Data to be summarized
                 </td>
             </tr>
             <tr>
