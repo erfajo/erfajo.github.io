@@ -32,15 +32,15 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Create a layer by index at a specified compound layer in a system family type that have a compound
-                    structure (walls, floors, roofs etc.).
+                    Create a layer by index at a specified compound layer in a system
+                    family type that have a compound structure (walls, floors, roofs etc.).
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
@@ -62,7 +62,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     material
                 </td>
                 <td>&gt;</td>
@@ -84,12 +84,34 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> vList&lt;bool&gt;ar </div>
+                    <div class="type"> List&lt;bool&gt; </div>
                     wrapping
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Wrapping of the layer
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;bool&gt; </div>
+                    variable
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Set the layer variable
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;bool&gt; </div>
+                    structural
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Set the layer structural
                 </td>
             </tr>
             <tr>
@@ -220,7 +242,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
@@ -242,7 +264,7 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     ElementType
                 </td>
                 <td>&gt;</td>
@@ -277,7 +299,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
@@ -288,7 +310,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     material
                 </td>
                 <td>&gt;</td>
@@ -312,7 +334,143 @@
                     <div class="ports">Output:</div>
                 </td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>               
+                    <div class="type"> List </div>               
+                    ElementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetCompoundLayerWrapping-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.SetCompoundLayerWrapping.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetCompoundLayerWrapping
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Wrapping of the layer by index at a specified compound layer in a system family type that have a compound
+                    structure (walls, floors, roofs etc.).
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    elementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The system family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;bool&gt; </div>
+                    wrapping
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Wrapping of the layer
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;int&gt; </div>
+                    index
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The index to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    ElementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetCompoundLayerVariable-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.SetCompoundLayerVariable.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetCompoundLayerVariable
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set the layer variable by index at a specified compound layer in a system family type that have a compound
+                    structure (walls, floors, roofs etc.).
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    elementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The system family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;bool&gt; </div>
+                    variable
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Set the layer variable
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;int&gt; </div>
+                    index
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The index to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
                     ElementType
                 </td>
                 <td>&gt;</td>
@@ -347,7 +505,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
@@ -380,7 +538,75 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
+                    ElementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    FamilyType
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetCompoundLayerStructural-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.SystemFamily.SetCompoundLayerStructural.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetCompoundLayerStructural
+                    </div>
+                    Orchid.Elements.SystemFamily
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set the layer structural by index at a specified compound layer in a system family type that have a compound
+                    structure (walls, floors, roofs etc.).
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    elementType
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The system family type
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;bool&gt; </div>
+                    structural
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Set the layer structural
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;int&gt; </div>
+                    index
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The index to set
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
                     ElementType
                 </td>
                 <td>&gt;</td>
@@ -415,7 +641,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
@@ -463,7 +689,7 @@
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List&lt;Element&gt; </div>
+                    <div class="type"> List </div>
                     elementType
                 </td>
                 <td>&gt;</td>
