@@ -178,19 +178,33 @@
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                        Purge document
+                        Purge document. Set "completely" to true for including materials and assets!<br>
+                        Please note "completely" purges also materials and materials assets that are 
+                        used in "peripheral" elements and settings. Among this is included materials/assets 
+                        bound to imported model elements, and materials/assets in settings like "Site" etc.
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> Document </div>
+                    <div class="type"> List&lt;Document&gt; </div>
                     document
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     Autodesk.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    completely
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Includes purging materials and assets
                 </td>
             </tr>
         </table><br><br><br><br>
