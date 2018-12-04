@@ -60,129 +60,6 @@
             </tr>
         </table><br><br><br><br>
 
-        <!--MaterialDensity-->
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.Element.MaterialDensity.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        MaterialDensity
-                    </div>
-                    Orchid.Elements.Element
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get material density, return physical and thermal values in SI unit (kg/m3)</i>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    material
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    List of materials
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    physical
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Physical value
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    thermal
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Thermal value
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    name
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Name as string
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <!--SetAnalyticalLocation-->
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.Element.SetAnalyticalLocation.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        SetAnalyticalLocation
-                    </div>
-                    Orchid.Elements.Element
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Set (structural) element analytical location
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    element
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Element(s)
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> string </div>
-                    location
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Element analytical location
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    Element
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Analytical floor element
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
         <!--FaceFlipped-->
         <table>
             <tr>
@@ -244,7 +121,6 @@
             <tr>
                 <td>
                     <img src="../nodeImg/Orchid.Elements.Element.Flipped.Small.png">
-
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -292,6 +168,73 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     List of not flipped elements
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--GetMaterial-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GetMaterial
+                    </div>
+                    Orchid.Elements.Element
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get material by element, return values in SI unit (m2/m3)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of element
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    Material
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of material
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    area
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of area
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    volumne
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of volumne
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -348,6 +291,129 @@
                 <td>&gt;</td>
                 <td style="width: 350px;">
                     List of not flipped elements
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetAnalyticalLocation-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Elements.Element.SetAnalyticalLocation.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetAnalyticalLocation
+                    </div>
+                    Orchid.Elements.Element
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set (structural) element analytical location
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element(s)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    location
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Element analytical location
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    Element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Analytical floor element
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SumByMaterial-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SumByMaterial
+                    </div>
+                    Orchid.Elements.Element
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Element by (summarized) material, return values in SI unit (m2/m3)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    Material
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of material
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    Element
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of element
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    area
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of area
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List </div>
+                    volumne
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of volumne
                 </td>
             </tr>
         </table><br><br><br><br>
