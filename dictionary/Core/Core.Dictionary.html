@@ -1,0 +1,457 @@
+<html>
+
+<head>
+    <title>Orchid Dictionary</title>
+    <meta http-equiv="content-type" content="text/html;charset=ISO-8859-1">
+    <meta name="copyright" content="Erik Falck Jørgensen">
+    <meta name="distribution" content="global">
+    <meta name="revisit-after" content="10 days">
+    <link href="../orchid.css" rel="stylesheet" type="text/css" media="all">
+</head>
+
+<body>
+    <div class="main">
+        <h1>Dictionary</h1>
+        <hr align="left">
+        <h3>Hierarchy: Orchid.Core.Dictionary</h3>
+
+        <!--ByKeysValues-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.ByKeysValues.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ByKeysValues
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produces a Dictionary with the supplied keys and values. The number of entries is 
+                    the shorter of keys or values.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The string keys of the Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    values
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The values of the Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The result Dictionary
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Components-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.Components.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Components
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produces the components of a Dictionary. The reverse of Dictionary.ByKeysValues.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The string keys of the Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    values
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The values of the Dictionary
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--RemoveKeys-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.RemoveKeys.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        RemoveKeys
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produce a new Dictionary with the given keys removed.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The key in the Dictionary to remove
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    A new Dictionary with the key removed
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--SetValueAtKeys-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.SetValueAtKeys.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetValueAtKeys
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produce a new Dictionary with a list of keys set to the new values, possibly overwriting existing key-value pairs. 
+                    These two lists are expected to be of the same length. If not, the shorter of the two bounds the number of insertions.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The keys in the Dictionary to set. If the same key already exists, the value at that key will be modified.
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    values
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The corresponding values to insert.
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    A new Dictionary with the entries inserted.
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--ValueAtKey-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.ValueAtKey.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ValueAtKey
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Obtain the value at a specified key.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    key
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The key in the Dictionary to obtain.
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    value
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The value at the specified key or null if it is not set.
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Count-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.Count.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Count
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    The number of key value pairs in a Dictionary.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> int </div>
+                    int
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The counted number
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Keys-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.Keys.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Keys
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produces the keys in a Dictionary.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>            
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;string&gt; </div>
+                    keys
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The string keys of the Dictionary
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Values-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Dictionary.Values.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Values
+                    </div>
+                    Orchid.Core.Dictionary
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Produces the values in a Dictionary.
+                    <br><br><i><strong>NOTE:</strong> this node is being deprecated in the Dynamo 2.x.x series and replaced by the OOTB nodes!<i>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> Dictionary </div>
+                    dictionary
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The Dictionary
+                </td>
+            </tr>            
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    values
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    The values of the Dictionary
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+    </div>
+</body>
+
+</html>
