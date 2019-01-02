@@ -281,6 +281,161 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--SetOptions-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Core.Print.SetOptions.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        SetOptions
+                    </div>
+                    Orchid.Core.Print
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Set printer options
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    printSetting
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    printer setting as string or Revit Element
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    viewLinksinBlue
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    View links in blue (Color prints only)
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    hideReforWorkPlanes
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hide ref/work planes
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    hideUnreferencedViewTags
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hide unreferenced view tags
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    maskCoincidentLines
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Region edges mask coincident lines
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    hideScopeBoxes
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hide scope boxes
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    hideCropBoundaries
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hide crop boundaries
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> bool </div>
+                    replaceHalftoneWithThinLines
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Replace halftone with thin lines
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    hiddenLineViews
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hidden line views: Remove lines using vector or raster
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    rasterQuality
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Appearance: Raster quality
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    colorDepth
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Appearance: Colors
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> Element </div>
+                    PrintSetting
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    PrintSetting
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
         <!--ByView-->
         <table>
             <tr>
@@ -506,11 +661,79 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Print ColorDepth-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Dropdown.ColorDepthTypeDD.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Print ColorDepth
+                    </div>
+                    Orchid.Core.Print
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Dropdown for appearance color values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    ColorDepth
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Appearance: Colors as string
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
+        <!--Print HiddenLineViews-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Dropdown.HiddenLineViewsTypeDD.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Print HiddenLineViews
+                    </div>
+                    Orchid.Core.Print
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Dropdown for hidden line views remove lines using vector or rastervalues
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    HiddenLineViews
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Hidden line views: Remove lines using vector or raster as string
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
         <!--Print MarginType-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintMarginTypeDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintMarginTypeDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -544,7 +767,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintPageOrientationDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintPageOrientationDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -578,7 +801,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintPaperPlacementDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintPaperPlacementDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -612,7 +835,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintPaperSizesDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintPaperSizesDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -646,7 +869,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintRangeDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintRangeDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -676,11 +899,45 @@
             </tr>
         </table><br><br><br><br>
 
+        <!--Print RasterQuality-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/Orchid.Dropdown.RasterQualityTypeDD.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        Print RasterQuality
+                    </div>
+                    Orchid.Core.Print
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Dropdown for appearance raster quality values
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> string </div>
+                    RasterQuality
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Appearance: Raster quality as string
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
         <!--Print Setting-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintSettingDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintSettingDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -714,7 +971,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrintZoomTypeDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrintZoomTypeDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
@@ -748,7 +1005,7 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Print.PrinterDD.Small.png">
+                    <img src="../nodeImg/Orchid.Dropdown.PrinterDD.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
