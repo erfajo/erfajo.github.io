@@ -13,19 +13,56 @@
     <div class="main">
         <h1>Parameter</h1>
         <hr align="left">
-        <h3>Hierarchy: Orchid.Elements.Parameter</h3>
+        <h3>Hierarchy: Orchid.Core.Parameter</h3>
+
+        <!--AddIfcParameters-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddIfcParameters
+                    </div>
+                    Orchid.Core.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add basic IFC parameters in the project (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+        </table><br><br><br><br>
 
         <!--AddProjectParameter-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Parameter.AddProjectParameter.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Parameter.AddProjectParameter.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
                         AddProjectParameter
                     </div>
-                    Orchid.Elements.Parameter
+                    Orchid.Core.Parameter
                 </td>
             </tr>
             <tr>
@@ -111,13 +148,13 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Parameter.AddSharedParameter.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Parameter.AddSharedParameter.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
                         AddSharedParameter
                     </div>
-                    Orchid.Elements.Parameter
+                    Orchid.Core.Parameter
                 </td>
             </tr>
             <tr>
@@ -216,13 +253,13 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Parameter.Associate.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Parameter.Associate.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
                         Associate
                     </div>
-                    Orchid.Elements.Parameter
+                    Orchid.Core.Parameter
                 </td>
             </tr>
             <tr>
@@ -294,13 +331,13 @@
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Parameter.ChangeCategory.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Parameter.ChangeCategory.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
                         ChangeCategory
                     </div>
-                    Orchid.Elements.Parameter
+                    Orchid.Core.Parameter
                 </td>
             </tr>
             <tr>
@@ -355,17 +392,17 @@
             </tr>
         </table><br><br><br><br>
 
-        <!--DeleteParameter-->
+        <!--Delete-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Parameter.DeleteParameter.Small.png">
+                    <img src="../nodeImg/Orchid.Core.Parameter.Delete.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        DeleteParameter
+                        Delete
                     </div>
-                    Orchid.Elements.Parameter
+                    Orchid.Core.Parameter
                 </td>
             </tr>
             <tr>
@@ -390,6 +427,173 @@
                     The name of the parameter to delete
                 </td>
             </tr>
+        </table><br><br><br><br>
+
+        <!--ProjectParameters-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        ProjectParameters
+                    </div>
+                    Orchid.Core.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get all project parameters in the document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Output:</div>
+                </td>
+                <td>
+                    <div class="type"> List </div>
+                    </div>
+                    parameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of parameters
+                </td>
+            </tr>            
+        </table><br><br><br><br>
+
+        <!--sharedParameters-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        sharedParameters
+                    </div>
+                    Orchid.Core.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get all shared parameters in the document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Output:</div>
+                </td>
+                <td>
+                    <div class="type"> List </div>
+                    </div>
+                    parameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of parameters
+                </td>
+            </tr>            
+            <tr>
+                <td>
+                    <div class="ports">Output:</div>
+                </td>
+                <td>
+                    <div class="type"> List </div>
+                    </div>
+                    guid
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of guids
+                </td>
+            </tr>
+        </table><br><br><br><br>
+        
+        <!--GlobalParameters-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        GlobalParameters
+                    </div>
+                    Orchid.Core.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Get all global parameters in the document
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    </div>
+                    document
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Output:</div>
+                </td>
+                <td>
+                    <div class="type"> List </div>
+                    </div>
+                    parameter
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    List of parameters
+                </td>
+            </tr>            
         </table><br><br><br><br>
 
     </div>

@@ -15,6 +15,54 @@
         <hr align="left">
         <h3>Hierarchy: Orchid.FamilyDocument.Parameter</h3>
 
+        <!--AddIfcParameters-->
+        <table>
+            <tr>
+                <td>
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
+                </td>
+                <td colspan="3">
+                    <div class="highlight">
+                        AddIfcParameters
+                    </div>
+                    Orchid.FamilyDocument.Parameter
+                </td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="3">
+                    <div class="desc">
+                    Add basic IFC parameters in the family (IfcExportAs, IfcExportType, IfcDescription, IFC CAD Layer)
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div class="ports">Input:</div>
+                </td>
+                <td>
+                    <div class="type"> List&lt;Document&gt; </div>
+                    </div>
+                    familyDocument
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Autodesk.Revit.DB.Document
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Output:</div></td>
+                <td>
+                    <div class="type"> object </div>
+                    watch
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Add a watch node to verify the data processing
+                </td>
+            </tr>
+        </table><br><br><br><br>
+
         <!--AddParameter (familyDocument, ParameterName, type, group, tooltip, instance, reporting)-->
         <table>
             <tr>
@@ -36,7 +84,6 @@
                     </div>
                 </td>
             </tr>
-
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
@@ -117,12 +164,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -228,12 +275,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -350,12 +397,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -428,12 +475,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -484,12 +531,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -607,12 +654,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -685,12 +732,12 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
+                    <div class="type"> object </div>
+                    watch
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
+                    Add a watch node to verify the data processing
                 </td>
             </tr>
         </table><br><br><br><br>
@@ -752,17 +799,6 @@
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List&lt;Document&gt; </div>
-                    Document
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
                     <div class="type"> List </div>
                     valueByType
                 </td>
@@ -810,17 +846,6 @@
                 <td>
                     <div class="type"> List&lt;Document&gt; </div>
                     familyDocument
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Family document (rfa) as Autodesk.DB.Document
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List&lt;Document&gt;</div>
-                    Document
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">

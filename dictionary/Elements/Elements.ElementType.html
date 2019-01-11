@@ -11,118 +11,96 @@
 
 <body>
     <div class="main">
-        <h1>Data</h1>
+        <h1>ElementType</h1>
         <hr align="left">
-        <h3>Hierarchy: Orchid.Core.Data</h3>
+        <h3>Hierarchy: Orchid.Elements.ElementType</h3>
 
-        <!--Await-->
+        <!--FamilyName-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Data.Await.Small.png">
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        Await
+                        FamilyName
                     </div>
-                    Orchid.Core.Data
+                    Orchid.Elements.ElementType
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Await a data stream before passing another data stream
+                    Get element type family name
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> object </div>
-                    pass
+                    <div class="type"> element </div>
+                    elementType
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Data to pass
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> List&lt;object&gt; </div>
-                    waitFor
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Data to wait for
+                    Revit.Elements.Element
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> object </div>
-                    pass
+                    <div class="type"> string </div>
+                    string
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Passed data
+                    Family name as string
                 </td>
             </tr>
         </table><br><br><br><br>
 
-        <!--Circut-->
+        <!--Name-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Core.Data.Circut.Small.png">
+                    <img src="../nodeImg/DefaultCustomNode.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        Circut
+                        Name
                     </div>
-                    Orchid.Core.Data
+                    Orchid.Elements.ElementType
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                        Set a state (true/false) to pass a data stream in a circut
+                    Get element type name
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> object </div>
-                    pass
+                    <div class="type"> element </div>
+                    elementType
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Data to pass
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Input:</div></td>
-                <td>
-                    <div class="type"> bool </div>
-                    state
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    Set a bool value for the state
+                    Revit.Elements.Element
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> object </div>
-                    pass
+                    <div class="type"> string </div>
+                    string
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    Passed data
+                    Name as string
                 </td>
             </tr>
         </table><br><br><br><br>

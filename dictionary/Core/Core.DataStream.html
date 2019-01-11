@@ -11,141 +11,118 @@
 
 <body>
     <div class="main">
-        <h1>Boolean</h1>
+        <h1>Data</h1>
         <hr align="left">
-        <h3>Hierarchy: Orchid.Elements.Boolean</h3>
+        <h3>Hierarchy: Orchid.Core.DataStream</h3>
 
-        <!--FaceFlipped-->
+        <!--Await-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Boolean.FaceFlipped.Small.png">
+                    <img src="../nodeImg/Orchid.Core.DataStream.Await.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        FaceFlipped
+                        Await
                     </div>
-                    Orchid.Elements.Boolean
+                    Orchid.Core.DataStream
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Get the element face flip condition, output as boolean
+                    Await a data stream before passing another data stream
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List </div>
-                    element
+                    <div class="type"> object </div>
+                    pass
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List of elements
+                    Data to pass
+                </td>
+            </tr>
+            <tr>
+                <td><div class="ports">Input:</div></td>
+                <td>
+                    <div class="type"> List&lt;object&gt; </div>
+                    waitFor
+                </td>
+                <td>&gt;</td>
+                <td style="width: 350px;">
+                    Data to wait for
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List </div>
-                    bool
+                    <div class="type"> object </div>
+                    pass
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List of booleans
+                    Passed data
                 </td>
             </tr>
         </table><br><br><br><br>
 
-        <!--Flipped-->
+        <!--Circut-->
         <table>
             <tr>
                 <td>
-                    <img src="../nodeImg/Orchid.Elements.Boolean.Flipped.Small.png">
+                    <img src="../nodeImg/Orchid.Core.DataStream.Circut.Small.png">
                 </td>
                 <td colspan="3">
                     <div class="highlight">
-                        Flipped
+                        Circut
                     </div>
-                    Orchid.Elements.Boolean
+                    Orchid.Core.DataStream
                 </td>
             </tr>
             <tr>
                 <td></td>
                 <td colspan="3">
                     <div class="desc">
-                    Get the element flip condition, output as boolean
+                        Set a state (true/false) to pass a data stream in a circut
                     </div>
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List </div>
-                    element
+                    <div class="type"> object </div>
+                    pass
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List of elements
-                </td>
-            </tr>
-            <tr>
-                <td><div class="ports">Output:</div></td>
-                <td>
-                    <div class="type"> List </div>
-                    bool
-                </td>
-                <td>&gt;</td>
-                <td style="width: 350px;">
-                    List of booleans
-                </td>
-            </tr>
-        </table><br><br><br><br>
-
-        <!--HandFlipped-->
-        <table>
-            <tr>
-                <td>
-                    <img src="../nodeImg/Orchid.Elements.Boolean.HandFlipped.Small.png">
-                </td>
-                <td colspan="3">
-                    <div class="highlight">
-                        HandFlipped
-                    </div>
-                    Orchid.Elements.Boolean
-                </td>
-            </tr>
-            <tr>
-                <td></td>
-                <td colspan="3">
-                    <div class="desc">
-                    Get the element hand flip condition, output as boolean
-                    </div>
+                    Data to pass
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Input:</div></td>
                 <td>
-                    <div class="type"> List </div>
-                    element
+                    <div class="type"> bool </div>
+                    state
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List of elements
+                    Set a bool value for the state
                 </td>
             </tr>
             <tr>
                 <td><div class="ports">Output:</div></td>
                 <td>
-                    <div class="type"> List </div>
-                    bool
+                    <div class="type"> object </div>
+                    pass
                 </td>
                 <td>&gt;</td>
                 <td style="width: 350px;">
-                    List of booleans
+                    Passed data
                 </td>
             </tr>
         </table><br><br><br><br>
