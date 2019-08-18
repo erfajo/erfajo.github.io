@@ -10,13 +10,12 @@ url: "https://erfajo.github.io" # the base hostname & protocol for your site
 locale: en_US
 
 ### Personal info and site tools info:
-twitter_username: yulijia
-github_username:  yulijia
-disqus_shortname: freshman21
+github_username:  erfajo
+disqus_shortname: orchid
 favicon:     "/images/favicon.ico"
-aboutme: Hi, this is erfajo. I made the Freshman21 theme. Please enjoy it. # these are shown on aboutme-sidebar.
+aboutme: Hi, this is erfajo. I am the author of Orchid for Dynamo. Please enjoy it. # these are shown on aboutme-sidebar.
 aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg# your photo.
-google_analytics_key: UA-57979084-1 # put YOUR key here to enable tracking! (blank to disable)
+google_analytics_key: # put YOUR key here to enable tracking! (blank to disable)
 
 
 ### Site setting:
@@ -173,12 +172,12 @@ locales:
 ### your Blogroll info, only name can shown on the page.
 
 Blogroll:
-      - name: Freshman
-        href: http://yulijia.net/freshman
-        title: Another Jekyll blog theme
-      - name: author's website
-        href: http://yulijia.net/
-        title: erfajo's website
+      - name: erfajo
+        href: https://erfajo.github.io
+        title: Main page
+      - name: Orchid
+        href: https://github.com/erfajo/OrchidForDynamo
+        title: Orchid page
 
 
 ### Build settings
