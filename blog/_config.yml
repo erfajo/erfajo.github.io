@@ -5,7 +5,7 @@ author: erfajo
 email: erfajo@gmail.com
 description: "Freshman21 is a Jekyll blog theme." # You can edit this line in _config.yml. It will appear in your document head meta and in your feed.xml site description
 keywords: "Jekyll, theme, Freshman21"
-baseurl: "/blog" # the subpath of your site, e.g. /blog/
+baseurl: "/blog/" # the subpath of your site, e.g. /blog/
 url: "https://erfajo.github.io" # the base hostname & protocol for your site
 locale: en_US
 
@@ -14,9 +14,28 @@ github_username:  erfajo
 disqus_shortname: orchid
 favicon:     "/images/favicon.ico"
 aboutme: Hi, this is erfajo. I am the author of Orchid for Dynamo. Please enjoy it. # these are shown on aboutme-sidebar.
-aboutme_photo: https://i.imgur.com/Mdc4szJl.jpg# your photo.
+aboutme_photo: "/images/Orchid.Large.png" # your photo.
 google_analytics_key: # put YOUR key here to enable tracking! (blank to disable)
 
+### your Blogroll info, only name can shown on the page.
+Blogroll:
+      - name: erfajo
+        href: https://erfajo.github.io
+        title: Main page
+      - name: Orchid
+        href: https://github.com/erfajo/OrchidForDynamo
+        title: Orchid page
+
+
+### Build settings
+markdown: kramdown
+#highlighter: pygments
+kramdown:
+        input: GFM
+        syntax_highlighter: rouge
+plugins: [jekyll-paginate]
+paginate: 5
+excerpt_separator: <!-- more -->
 
 ### Site setting:
 ShowContactInfo: "True" # Personal Info (twitter,github,email) can be seen on aboutme-sidebar, those info only shown where ShowContactInfo == True
@@ -168,24 +187,3 @@ locales:
       About: "Tentang"
       Guestbook: "Buku tamu"
       Subscribe: "Langganan"
-
-### your Blogroll info, only name can shown on the page.
-
-Blogroll:
-      - name: erfajo
-        href: https://erfajo.github.io
-        title: Main page
-      - name: Orchid
-        href: https://github.com/erfajo/OrchidForDynamo
-        title: Orchid page
-
-
-### Build settings
-markdown: kramdown
-#highlighter: pygments
-kramdown:
-        input: GFM
-        syntax_highlighter: rouge
-plugins: [jekyll-paginate]
-paginate: 5
-excerpt_separator: <!-- more -->
